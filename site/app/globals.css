@@ -1,0 +1,95 @@
+@import "tailwindcss";
+
+:root {
+  --primary: #ff5a1f;
+  --secondary: #f4c95d;
+  --accent: #d61c4e;
+  --background: #111111;
+  --text: #f6efe5;
+  --muted: #2a2a2a;
+  --electric: #35f2d0;
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-lg: 24px;
+  --radius-xl: 36px;
+  --radius-pill: 999px;
+  --shadow-soft: 0 10px 30px rgba(0, 0, 0, 0.22);
+  --shadow-medium: 0 18px 50px rgba(0, 0, 0, 0.34);
+  --shadow-hard: 0 0 0 1px rgba(255, 255, 255, 0.05), 0 24px 60px rgba(0, 0, 0, 0.5);
+  --glow-orange: 0 0 30px rgba(255, 90, 31, 0.28);
+  --glow-aqua: 0 0 24px rgba(53, 242, 208, 0.24);
+}
+
+@theme inline {
+  --color-primary: var(--primary);
+  --color-secondary: var(--secondary);
+  --color-accent: var(--accent);
+  --color-background: var(--background);
+  --color-text: var(--text);
+  --color-muted: var(--muted);
+  --color-electric: var(--electric);
+  --font-heading: var(--font-bebas);
+  --font-sans: var(--font-manrope);
+  --font-body: var(--font-manrope);
+  --font-mono: var(--font-plex-mono);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at top left, rgba(214, 28, 78, 0.18), transparent 28%),
+    radial-gradient(circle at top right, rgba(255, 90, 31, 0.12), transparent 24%),
+    linear-gradient(180deg, #0b0b0b 0%, #111111 30%, #111111 100%);
+  color: var(--text);
+  font-family: var(--font-manrope), sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a,
+button,
+input,
+select,
+textarea {
+  transition:
+    color 180ms ease,
+    background-color 180ms ease,
+    border-color 180ms ease,
+    transform 180ms ease,
+    box-shadow 180ms ease,
+    opacity 180ms ease;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+::selection {
+  background: rgba(53, 242, 208, 0.25);
+  color: var(--text);
+}
+
+:focus-visible {
+  outline: 2px solid var(--electric);
+  outline-offset: 3px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation: none !important;
+    transition: none !important;
+  }
+  }
