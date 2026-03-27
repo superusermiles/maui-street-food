@@ -29,13 +29,28 @@ const eventCards = [
 ];
 
 export const metadata: Metadata = {
-  title: 'Events | Māui Street Food Ponsonby',
+  title: 'Street Food Events in Ponsonby Auckland | Māui Street Food',
   description:
-    'DJ sets, collabs, live nights, and rotating after-dark events at Māui Street Food in Ponsonby, Auckland.',
+    'See DJ nights, collabs, and late-night street food events in Ponsonby, Auckland at Māui Street Food.',
+  keywords: [
+    'Ponsonby events venue',
+    'street food events Auckland',
+    'DJ nights Ponsonby',
+    'late night events Auckland',
+    'Ponsonby food events',
+  ],
   openGraph: {
-    title: 'Events | Māui Street Food Ponsonby',
+    title: 'Street Food Events in Ponsonby Auckland | Māui Street Food',
     description:
-      'DJ sets, collabs, live nights, and rotating after-dark events at Māui Street Food in Ponsonby, Auckland.',
+      'Check upcoming DJ nights, collabs, and after-dark street food events in Ponsonby at Māui Street Food.',
+  },
+  twitter: {
+    title: 'Street Food Events in Ponsonby Auckland | Māui Street Food',
+    description:
+      'DJ sets, collabs, and bold late-night event nights at Māui Street Food in Ponsonby.',
+  },
+  alternates: {
+    canonical: 'https://maui-street-food.vercel.app/events/',
   },
 };
 
@@ -47,7 +62,7 @@ export default function EventsPage() {
           <div className="relative">
             <img
               src="https://images.unsplash.com/photo-1501386761578-eac5c94b800a?w=1600&h=1000&fit=crop"
-              alt="Outdoor live music crowd at night"
+              alt="Late-night crowd at a Ponsonby Auckland street food event"
               className="absolute inset-0 h-full w-full object-cover"
             />
             <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(17,17,17,0.9)_0%,rgba(17,17,17,0.74)_45%,rgba(17,17,17,0.9)_100%)]" />
@@ -55,8 +70,8 @@ export default function EventsPage() {
               <div className="max-w-4xl space-y-6">
                 <p className="mono-label text-secondary">After-dark programme</p>
                 <div className="h-1 w-24 rounded-full bg-electric shadow-[var(--glow-aqua)]" />
-                <h1 className="display-title max-w-[10ch] text-balance text-text">
-                  Come for dinner. Stay for the noise.
+                <h1 className="display-title max-w-[11ch] text-balance text-text">
+                  Street food events in Ponsonby after dark.
                 </h1>
                 <p className="max-w-[60ch] text-base leading-8 text-text/82 sm:text-lg">
                   The food pulls people in. The line-up keeps them around. Māui events are built
@@ -142,7 +157,7 @@ export default function EventsPage() {
           <div className="overflow-hidden rounded-[32px] border border-white/10 shadow-[var(--shadow-hard)]">
             <img
               src="https://images.unsplash.com/photo-1429962714451-bb934ecdc4ec?w=1200&h=1000&fit=crop"
-              alt="Crowd with raised hands under stage lighting"
+              alt="Crowd with raised hands during a Ponsonby Auckland live night"
               className="h-[420px] w-full object-cover lg:h-[540px]"
             />
           </div>
@@ -178,7 +193,7 @@ export default function EventsPage() {
           <div className="overflow-hidden rounded-[30px] border border-white/10 shadow-[var(--shadow-hard)]">
             <img
               src="https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?w=1000&h=900&fit=crop"
-              alt="Friends dancing and smiling in neon lighting"
+              alt="Friends dancing at a Māui Street Food event in Ponsonby"
               className="h-full min-h-[300px] w-full object-cover"
             />
           </div>
@@ -186,14 +201,14 @@ export default function EventsPage() {
             <div className="overflow-hidden rounded-[30px] border border-white/10 shadow-[var(--shadow-hard)]">
               <img
                 src="https://images.unsplash.com/photo-1506157786151-b8491531f063?w=800&h=900&fit=crop"
-                alt="Crowd under red and purple event lights"
+                alt="Crowd under red and purple lights at an Auckland night event"
                 className="h-[220px] w-full object-cover lg:h-[248px]"
               />
             </div>
             <div className="overflow-hidden rounded-[30px] border border-white/10 shadow-[var(--shadow-hard)]">
               <img
                 src="https://images.unsplash.com/photo-1470229722913-7c0e2dbbafd3?w=800&h=900&fit=crop"
-                alt="Stage performance with bright beams and haze"
+                alt="Stage performance and haze during a late-night Ponsonby event"
                 className="h-[220px] w-full object-cover lg:h-[248px]"
               />
             </div>

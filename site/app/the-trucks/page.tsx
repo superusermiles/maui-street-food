@@ -11,7 +11,7 @@ const trucks = [
     nights: 'Wed–Sun',
     image:
       'https://images.unsplash.com/photo-1529692236671-f1de7ce1c16d?w=900&h=1100&fit=crop',
-    alt: 'Smoked meat sliced on a board',
+    alt: 'Smoked Pacific barbecue meat served at a Ponsonby Auckland street food truck',
   },
   {
     name: 'Island Skewers',
@@ -22,7 +22,7 @@ const trucks = [
     nights: 'Thu–Sun',
     image:
       'https://images.unsplash.com/photo-1552332386-f8dd00dc2f85?w=900&h=1100&fit=crop',
-    alt: 'Grilled skewers over flame',
+    alt: 'Flame-grilled skewers at Māui Street Food in Ponsonby Auckland',
   },
   {
     name: 'Midnight Fry',
@@ -33,7 +33,7 @@ const trucks = [
     nights: 'Wed–Sat',
     image:
       'https://images.unsplash.com/photo-1512152272829-e3139592d56f?w=900&h=1100&fit=crop',
-    alt: 'Crispy fried street food in paper tray',
+    alt: 'Loaded late-night fried street food served in Ponsonby Auckland',
   },
   {
     name: 'Lava Soft Serve',
@@ -44,7 +44,7 @@ const trucks = [
     nights: 'Fri–Sun',
     image:
       'https://images.unsplash.com/photo-1563805042-7684c019e1cb?w=900&h=1100&fit=crop',
-    alt: 'Soft serve dessert with dramatic toppings',
+    alt: 'Soft serve dessert from a Ponsonby late-night food truck',
   },
 ];
 
@@ -58,13 +58,28 @@ const dishes = [
 ];
 
 export const metadata: Metadata = {
-  title: 'The Trucks | Māui Street Food',
+  title: 'Food Trucks in Ponsonby Auckland | Māui Street Food',
   description:
-    'Meet the resident food trucks behind Māui Street Food in Ponsonby, from smoke-heavy grills to sweet late-night finishes.',
+    'Explore Māui Street Food trucks in Ponsonby, Auckland for Pacific barbecue, skewers, burgers, loaded fries, and late-night desserts.',
+  keywords: [
+    'food trucks Ponsonby Auckland',
+    'street food trucks Auckland',
+    'late night burgers Ponsonby',
+    'Ponsonby barbecue truck',
+    'Ponsonby dessert truck',
+  ],
   openGraph: {
-    title: 'The Trucks | Māui Street Food',
+    title: 'Food Trucks in Ponsonby Auckland | Māui Street Food',
     description:
-      'Meet the resident food trucks behind Māui Street Food in Ponsonby, from smoke-heavy grills to sweet late-night finishes.',
+      'See the resident Māui Street Food trucks serving Pacific barbecue, loaded fries, skewers, and dessert in Ponsonby.',
+  },
+  twitter: {
+    title: 'Food Trucks in Ponsonby Auckland | Māui Street Food',
+    description:
+      'Explore Ponsonby food trucks, signature dishes, and late-night eats at Māui Street Food.',
+  },
+  alternates: {
+    canonical: 'https://maui-street-food.vercel.app/the-trucks/',
   },
 };
 
@@ -76,8 +91,8 @@ export default function TrucksPage() {
           <div className="textured-grid px-6 py-12 sm:px-8 lg:px-12 lg:py-16">
             <p className="mono-label text-secondary">The line-up</p>
             <div className="mt-6 max-w-4xl space-y-5">
-              <h1 className="display-title max-w-[11ch] text-balance text-text">
-                Four trucks. Zero boring orders.
+              <h1 className="display-title max-w-[12ch] text-balance text-text">
+                Food trucks in Ponsonby worth chasing.
               </h1>
               <p className="max-w-[60ch] text-base leading-8 text-text/78 sm:text-lg">
                 Every truck brings its own style, but the rule stays the same: big flavour, fast
@@ -87,7 +102,7 @@ export default function TrucksPage() {
           </div>
           <img
             src="https://images.unsplash.com/photo-1534939561126-855b8675edd7?w=1600&h=900&fit=crop"
-            alt="Street food being cooked on a busy grill"
+            alt="Street food cooking on a busy Ponsonby Auckland grill"
             className="h-[340px] w-full object-cover sm:h-[420px] lg:h-[500px]"
           />
         </div>
@@ -168,7 +183,7 @@ export default function TrucksPage() {
           <div className="overflow-hidden rounded-[32px] border border-white/10 shadow-[var(--shadow-hard)]">
             <img
               src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=1200&h=900&fit=crop"
-              alt="Friends gathered around a shared table full of food"
+              alt="Friends sharing late-night street food around a communal table in Auckland"
               className="h-[420px] w-full object-cover lg:h-[520px]"
             />
           </div>

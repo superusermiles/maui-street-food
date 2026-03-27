@@ -28,13 +28,28 @@ const gettingHere = [
 ];
 
 export const metadata: Metadata = {
-  title: 'Find Us | Māui Street Food',
+  title: 'Contact Māui Street Food | Book Street Food in Ponsonby',
   description:
-    'Find Māui Street Food in Ponsonby, Auckland. Check opening hours, transport options, and send an enquiry.',
+    'Contact Māui Street Food in Ponsonby, Auckland for opening hours, directions, group bookings, private hire, and vendor enquiries.',
+  keywords: [
+    'contact Māui Street Food',
+    'book street food Ponsonby',
+    'Ponsonby food truck venue',
+    'Ponsonby opening hours',
+    'private hire Ponsonby Auckland',
+  ],
   openGraph: {
-    title: 'Find Us | Māui Street Food',
+    title: 'Contact Māui Street Food | Book Street Food in Ponsonby',
     description:
-      'Find Māui Street Food in Ponsonby, Auckland. Check opening hours, transport options, and send an enquiry.',
+      'Find Māui Street Food in Ponsonby, Auckland and send an enquiry for bookings, private hire, or vendor applications.',
+  },
+  twitter: {
+    title: 'Contact Māui Street Food | Book Street Food in Ponsonby',
+    description:
+      'Get directions, hours, and booking details for Māui Street Food in Ponsonby, Auckland.',
+  },
+  alternates: {
+    canonical: 'https://maui-street-food.vercel.app/find-us/',
   },
 };
 
@@ -45,8 +60,8 @@ export default function FindUsPage() {
         <div className="rounded-[36px] border border-white/10 bg-[#161616] px-6 py-12 shadow-[var(--shadow-hard)] sm:px-8 lg:px-12 lg:py-16">
           <p className="mono-label text-secondary">Plan your visit</p>
           <div className="mt-6 max-w-4xl space-y-5">
-            <h1 className="display-title max-w-[10ch] text-balance text-text">
-              Find the lights. Follow the smoke.
+            <h1 className="display-title max-w-[12ch] text-balance text-text">
+              Contact Māui Street Food in Ponsonby.
             </h1>
             <p className="max-w-[60ch] text-base leading-8 text-text/78 sm:text-lg">
               We’re in Ponsonby, easy to pull up to, and built for after-work dinners, late bites,
@@ -102,7 +117,7 @@ export default function FindUsPage() {
           <div className="order-1 overflow-hidden rounded-[32px] border border-white/10 bg-[#171717] shadow-[var(--shadow-hard)] lg:order-2">
             <img
               src="https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?w=1200&h=900&fit=crop"
-              alt="Auckland city street scene at dusk"
+              alt="Ponsonby Auckland street scene near Māui Street Food"
               className="h-[320px] w-full object-cover sm:h-[420px] lg:h-full"
             />
             <div className="space-y-5 p-6">
@@ -240,7 +255,7 @@ export default function FindUsPage() {
         <div className="relative overflow-hidden rounded-[36px] border border-white/10 shadow-[var(--shadow-hard)]">
           <img
             src="https://images.unsplash.com/photo-1507699622108-4be3abd695ad?w=1600&h=900&fit=crop"
-            alt="Auckland skyline glowing at sunset into night"
+            alt="Auckland skyline at dusk before a late-night meal in Ponsonby"
             className="h-[360px] w-full object-cover sm:h-[420px] lg:h-[500px]"
           />
           <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(17,17,17,0.28)_0%,rgba(17,17,17,0.82)_100%)]" />

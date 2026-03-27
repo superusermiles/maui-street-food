@@ -35,10 +35,15 @@ const businessName = 'Māui Street Food';
 const localBusinessSchema = {
   '@context': 'https://schema.org',
   '@type': 'FoodEstablishment',
+  '@id': `${siteUrl}/#foodestablishment`,
   name: businessName,
   description:
     'Late-night street food collective in Ponsonby, Auckland with rotating food trucks, outdoor dining, and high-energy event nights.',
   url: siteUrl,
+  image: [
+    'https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=1600&h=1100&fit=crop',
+    'https://images.unsplash.com/photo-1514933651103-005eec06c04b?w=1600&h=900&fit=crop',
+  ],
   telephone: '+64 9-555-0188',
   email: 'hello@mauistreetfood.co.nz',
   address: {
@@ -77,7 +82,7 @@ const localBusinessSchema = {
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
-  title: 'Late Night Street Food Ponsonby Auckland | Māui Street Food',
+  title: 'Late Night Street Food in Ponsonby Auckland | Māui Street Food',
   description:
     'Late night street food in Ponsonby, Auckland with rotating food trucks, outdoor dining, DJ nights, and bold flavours at Māui Street Food.',
   keywords: [
@@ -93,7 +98,7 @@ export const metadata: Metadata = {
     'Māui Street Food',
   ],
   openGraph: {
-    title: 'Late Night Street Food Ponsonby Auckland | Māui Street Food',
+    title: 'Late Night Street Food in Ponsonby Auckland | Māui Street Food',
     description:
       'Discover late-night street food, rotating trucks, outdoor dining, and event nights in Ponsonby at Māui Street Food.',
     url: siteUrl,
@@ -103,7 +108,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Late Night Street Food Ponsonby Auckland | Māui Street Food',
+    title: 'Late Night Street Food in Ponsonby Auckland | Māui Street Food',
     description:
       'Late-night food trucks, bold street eats, and live event nights in Ponsonby, Auckland.',
   },
@@ -122,7 +127,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="bg-background">
+    <html lang="en-NZ" className="bg-background">
       <body
         className={`${bebasNeue.variable} ${manrope.variable} ${ibmPlexMono.variable} bg-background font-body text-text antialiased`}
       >

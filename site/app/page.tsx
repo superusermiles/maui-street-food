@@ -1,9 +1,26 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Late Night Street Food Ponsonby Auckland | Māui Street Food',
+  title: 'Late Night Street Food in Ponsonby Auckland | Māui Street Food',
   description:
-    'Visit Māui Street Food for late night street food in Ponsonby, Auckland with rotating trucks, outdoor dining, and event nights.',
+    'Visit Māui Street Food for late night street food in Ponsonby, Auckland with rotating trucks, outdoor dining, and DJ nights.',
+  keywords: [
+    'late night street food Ponsonby',
+    'late night food Ponsonby Auckland',
+    'food trucks Ponsonby',
+    'street food yard Auckland',
+    'outdoor dining Ponsonby',
+  ],
+  openGraph: {
+    title: 'Late Night Street Food in Ponsonby Auckland | Māui Street Food',
+    description:
+      'Visit Māui Street Food for late-night food trucks, outdoor dining, and event nights in Ponsonby, Auckland.',
+  },
+  twitter: {
+    title: 'Late Night Street Food in Ponsonby Auckland | Māui Street Food',
+    description:
+      'Late-night street food, outdoor dining, and DJ nights in Ponsonby at Māui Street Food.',
+  },
   alternates: {
     canonical: 'https://maui-street-food.vercel.app',
   },
