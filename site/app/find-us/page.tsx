@@ -105,7 +105,7 @@ export default function FindUsPage() {
                 <p className="mono-label text-secondary">Opening hours</p>
                 <dl className="mt-4 space-y-3 text-sm leading-7 text-text/80">
                   {hours.map(([day, value]) => (
-                    <div key={day} className="flex items-start justify-between gap-4 border-b border-white/8 pb-3">
+                    <div key={day} className="flex items-start justify-between gap-4 border-b border-white/8 pb-3 last:border-b-0 last:pb-0">
                       <dt>{day}</dt>
                       <dd className="text-right">{value}</dd>
                     </div>
@@ -173,10 +173,11 @@ export default function FindUsPage() {
             <p className="max-w-[48ch] text-base leading-8 text-text/78 sm:text-lg">
               Ask about group bookings, private hire, vendor applications, or event collabs.
             </p>
-            <div className="rounded-[28px] border border-primary/25 bg-primary/10 p-5 shadow-[var(--glow-orange)]">
-              <p className="mono-label text-secondary">Fast response</p>
+            <div className="rounded-[28px] border border-white/10 bg-white/5 p-5">
+              <p className="mono-label text-electric">Fast response</p>
               <p className="mt-3 text-sm leading-7 text-text/78">
-                Enquiry sent. We’ll get back to you soon.
+                We reply to bookings, collabs, and vendor enquiries as quickly as we can during the
+                live week.
               </p>
             </div>
           </div>
@@ -188,6 +189,11 @@ export default function FindUsPage() {
           >
             <input type="hidden" name="_subject" value="Māui Street Food enquiry" />
             <input type="hidden" name="_captcha" value="false" />
+            <input
+              type="hidden"
+              name="_next"
+              value="https://maui-street-food.vercel.app/find-us/?submitted=true"
+            />
             <div className="grid gap-5 md:grid-cols-2">
               <label className="grid gap-2 text-sm text-text/80">
                 <span>Name</span>
