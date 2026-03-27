@@ -2,18 +2,34 @@ export const dynamic = 'force-static';
 
 import type { MetadataRoute } from 'next';
 
-export default function sitemap(): MetadataRoute.Sitemap {
-  const base = 'https://maui-street-food.vercel.app';
+const base = 'https://maui-street-food.vercel.app';
+const lastModified = new Date('2026-03-27T00:00:00.000Z');
 
+export default function sitemap(): MetadataRoute.Sitemap {
   return [
-    '',
-    '/the-trucks',
-    '/events',
-    '/find-us',
-  ].map((path) => ({
-    url: `${base}${path}/`.replace(/\/\/$/, '/'),
-    lastModified: new Date(),
-    changeFrequency: 'weekly',
-    priority: path === '' ? 1 : 0.8,
-  }));
+    {
+      url: `${base}/`,
+      lastModified,
+      changeFrequency: 'weekly',
+      priority: 1,
+    },
+    {
+      url: `${base}/the-trucks/`,
+      lastModified,
+      changeFrequency: 'weekly',
+      priority: 0.9,
+    },
+    {
+      url: `${base}/events/`,
+      lastModified,
+      changeFrequency: 'weekly',
+      priority: 0.8,
+    },
+    {
+      url: `${base}/find-us/`,
+      lastModified,
+      changeFrequency: 'weekly',
+      priority: 0.8,
+    },
+  ];
 }
